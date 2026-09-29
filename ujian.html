@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBT Ujian - Ruang Ujian</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header CBT -->
+  <header class="header">
+    <div class="user-info">
+      <span id="displayNama">Siswa: -</span> | <span id="displayKelas">Kelas: -</span>
+    </div>
+    <div class="timer-box">
+      Sisa Waktu: <strong id="timer">00:00:00</strong>
+    </div>
+  </header>
+
+  <!-- Main Area -->
+  <div class="cbt-container">
+    
+    <!-- Area Soal (Kiri) -->
+    <main class="question-area">
+      <div class="question-header">
+        <h3 id="nomorSoal">Soal No. 1</h3>
+      </div>
+      
+      <div class="question-body">
+        <p id="teksSoal">Loading soal...</p>
+        
+        <div class="options-group" id="opsiJawaban">
+          <!-- Opsi A, B, C, D akan di-render via JavaScript nanti -->
+        </div>
+      </div>
+
+      <div class="question-footer">
+        <button id="btnPrev" class="btn btn-secondary">Sebelumnya</button>
+        <button id="btnNext" class="btn btn-primary">Selanjutnya</button>
+        <button id="btnFinish" class="btn btn-success float-right">Selesaikan Ujian</button>
+      </div>
+    </main>
+
+    <!-- Sidebar Nomor Soal (Kanan) -->
+    <aside class="sidebar">
+      <h3>Navigasi Soal</h3>
+      <div class="number-grid" id="gridNomor">
+        <!-- Kotak nomor 1-10 akan di-render via JavaScript -->
+      </div>
+      
+      <div class="legend">
+        <span class="badge legend-green">Sudah Dijawab</span>
+        <span class="badge legend-gray">Belum Dijawab</span>
+      </div>
+    </aside>
+
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBT Ujian - Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-login">
+
+  <div class="login-container">
+    <h2>Aplikasi CBT Ujian</h2>
+    <p>Masukkan data diri Anda sebelum memulai ujian.</p>
+    
+    <form id="formLogin">
+      <div class="form-group">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" placeholder="Contoh: Muhammad Kamaluddin" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Contoh: kamal@gmail.com" required>
+     </div>
+
+      <div class="form-group">
+        <label for="kelas">Kelas / NISN</label>
+        <input type="text" id="kelas" placeholder="Contoh: XII TKJ 2" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Mulai Ujian</button>
+    </form>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
